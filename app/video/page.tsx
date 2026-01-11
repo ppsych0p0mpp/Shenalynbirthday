@@ -29,7 +29,7 @@ export default function VideoPage() {
           </div>
           {/* </CHANGE> */}
           <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-pink-600">
-            🎉 Happy Birthday Mary!
+            🎉 Happy Birthday!
           </h1>
           {/* </CHANGE> */}
           <p className="text-gray-600 text-lg">Hope this makes you smile</p>
