@@ -58,7 +58,6 @@ export default function VideoPage() {
               allowFullScreen
             />
           </div>
-          </div>
         </div>
 
         <div className="flex items-center gap-3 mt-4">
