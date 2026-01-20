@@ -50,13 +50,16 @@ export default function VideoPage() {
 
           <div className="w-full aspect-video bg-white rounded-xl shadow-2xl overflow-hidden ring-4 ring-rose-300">
             {/* </CHANGE> */}
-            <iframe
+            <video
               className="w-full h-full"
-              src="https://www.youtube.com/embed/kjwWxpGnfQU?autoplay=1&loop=1&playlist=kjwWxpGnfQU"
               title="Birthday Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+              autoPlay
+              loop
+              controls
+            >
+              <source src="/uia.mp4" type="video/mp4" />
+              
+            </video>
           </div>
         </div>
 
