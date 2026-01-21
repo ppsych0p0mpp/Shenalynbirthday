@@ -29,7 +29,7 @@ export default function VideoPage() {
           </div>
           {/* </CHANGE> */}
           <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-pink-600">
-            🎉 Happy Birthday!
+            🎉 Happy Birthday Shen Shen!
           </h1>
           {/* </CHANGE> */}
           <p className="text-gray-600 text-lg">Hope this makes you smile</p>
@@ -73,7 +73,26 @@ export default function VideoPage() {
           <span className="text-2xl">🌹</span>
         </div>
         {/* </CHANGE> */}
+
+        <div className="mt-8 w-full max-w-md mx-auto">
+          <div className="bg-white rounded-lg shadow-lg p-6 ring-2 ring-rose-300">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="text-2xl">🎵</span>
+              <p className="text-gray-700 font-semibold">A song for you by Me ft. mycat</p>
+              <span className="text-2xl">🎵</span>
+            </div>
+            <audio 
+              className="w-full" 
+              controls
+              controlsList="nodownload"
+            >
+              <source src="/song.wav" type="audio/wav" />
+            </audio>
+          </div>
+        </div>
       </div>
+
+      
     </main>
   )
 }
