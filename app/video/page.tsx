@@ -1,4 +1,10 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function VideoPage() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <main className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-100 via-amber-100 to-orange-100 p-4 overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -19,6 +25,15 @@ export default function VideoPage() {
       {/* </CHANGE> */}
 
       <div className="relative z-10 w-full max-w-4xl flex flex-col items-center gap-6">
+        {/* Message Button */}
+        <button
+          onClick={() => setShowModal(true)}
+          className="mb-4 px-6 py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg flex items-center gap-2"
+        >
+          <span className="text-2xl">💌</span>
+          Click to show Message
+          <span className="text-2xl">💌</span>
+        </button>
         <div className="text-center space-y-2">
           <div className="flex items-center justify-center gap-3 mb-2">
             <span className="text-3xl animate-bounce">🌹</span>
@@ -29,7 +44,7 @@ export default function VideoPage() {
           </div>
           {/* </CHANGE> */}
           <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-pink-600">
-            🎉 Happy Birthday Shen Shen!
+            🎉 Happy Birthday Shen!
           </h1>
           {/* </CHANGE> */}
           <p className="text-gray-600 text-lg">Hope this makes you smile</p>
@@ -78,7 +93,7 @@ export default function VideoPage() {
           <div className="bg-white rounded-lg shadow-lg p-6 ring-2 ring-rose-300">
             <div className="flex items-center justify-center gap-2 mb-4">
               <span className="text-2xl">🎵</span>
-              <p className="text-gray-700 font-semibold">A song for you by Me ft. mycat</p>
+              <p className="text-gray-700 font-semibold"> songs for you by Me ft. mycat</p>
               <span className="text-2xl">🎵</span>
             </div>
             <audio 
@@ -88,11 +103,95 @@ export default function VideoPage() {
             >
               <source src="/song.wav" type="audio/wav" />
             </audio>
+            <div className="flex items-center justify-center gap-2 mb-4 mt-6">
+              <span className="text-2xl"></span>
+              <p className="text-gray-700 font-semibold"> Wonderwall</p>
+              <span className="text-2xl"></span>
+            </div>
+            <audio 
+              className="w-full mt-4" 
+              controls
+              controlsList="nodownload"
+            >
+              <source src="/song2.wav" type="audio/wav" />
+            </audio>
+            <div className="flex items-center justify-center gap-2 mb-4 mt-6">
+              <span className="text-2xl"></span>
+              <p className="text-gray-700 font-semibold"> The Only Exception</p>
+              <span className="text-2xl"></span>
+            </div>
+            <audio 
+              className="w-full mt-4" 
+              controls
+              controlsList="nodownload"
+            >
+              <source src="/oex.wav" type="audio/wav" />
+            </audio>
           </div>
         </div>
       </div>
 
-      
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-gray flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full relative overflow-hidden">
+            {/* Decorative background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-rose-100 to-pink-100 opacity-50"></div>
+            
+            {/* Floating emojis */}
+            <div className="absolute top-4 left-4 text-3xl animate-bounce">🌹</div>
+            <div className="absolute top-4 right-4 text-3xl animate-pulse">🌸</div>
+            <div className="absolute bottom-4 left-4 text-3xl animate-pulse">😺</div>
+            <div className="absolute bottom-4 right-4 text-3xl animate-bounce">💕</div>
+
+            {/* Modal content */}
+            <div className="relative p-8 text-center space-y-4">
+              <button
+                onClick={() => setShowModal(false)}
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl w-8 h-8 flex items-center justify-center"
+              >
+                ✕
+              </button>
+
+              <div className="text-5xl mb-4">💝</div>
+              
+              <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-pink-600">
+                
+              </h2>
+
+              <div className="bg-white bg-opacity-80 rounded-xl p-6 my-4 border-2 border-rose-300">
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">
+                  Happy Birthday Shen! 🎉
+                </p>
+                <p className="text-gray-600 text-base mt-3">
+                  I hope you find peace and healing from whatever you're going through. Don't let sadness win! I’m kinda sad I won't get to see you, but I’m so glad I got to know you, even for a little while. This is a first for me, creating something special just for someone. I know you don't want a to be greeted on your birthday, but I insist 🎂! Thanks for making my end and start of the year interesting. Stay positive and be happy! 😺💕
+                </p>
+                <p className="text-gray-600 text-base mt-3 font-bold">
+                  Your real beauty isn't just in your face; it's the light you carry in your heart.
+                </p>
+                <p className="text-gray-600 text-base mt-3 font-bold">
+                  I am choosing to become a quiet memory in the back of your mind. This is how I disappear.
+                </p>
+              </div>
+
+              <div className="flex items-center justify-center gap-2 text-2xl">
+                <span>🌹</span>
+                <span>🎂</span>
+                <span>🎈</span>
+                <span>😸</span>
+                <span>🌸</span>
+              </div>
+
+              <button
+                onClick={() => setShowModal(false)}
+                className="w-full mt-4 px-4 py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-bold rounded-lg hover:shadow-lg transition-all duration-300"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   )
 }
