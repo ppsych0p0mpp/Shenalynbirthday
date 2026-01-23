@@ -164,13 +164,13 @@ export default function VideoPage() {
                   Happy Birthday Shen! 🎉
                 </p>
                 <p className="text-gray-600 text-base mt-3">
-                  I hope you find peace and healing from whatever you're going through. Don't let sadness win! I’m kinda sad I won't get to see you, but I’m so glad I got to know you, even for a little while. This is a first for me, creating something special just for someone. I know you don't want a to be greeted on your birthday, but I insist 🎂! Thanks for making my end and start of the year interesting. Stay positive and be happy! 😺💕
+                  
                 </p>
                 <p className="text-gray-600 text-base mt-3 font-bold">
                   Your real beauty isn't just in your face; it's the light you carry in your heart.
                 </p>
                 <p className="text-gray-600 text-base mt-3 font-bold">
-                  I am choosing to become a quiet memory in the back of your mind. This is how I disappear.
+                 
                 </p>
               </div>
 
