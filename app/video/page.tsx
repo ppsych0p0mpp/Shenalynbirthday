@@ -241,6 +241,7 @@ export default function VideoPage() {
               </h2>
 
               <div className="bg-white bg-opacity-80 rounded-xl p-6 my-4 border-2 border-rose-300">
+<<<<<<< HEAD
                 {messages[currentMessageIndex].content}
               </div>
 
@@ -263,6 +264,20 @@ export default function VideoPage() {
                 >
                   Next →
                 </button>
+=======
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">
+                  Happy Birthday Shen! 🎉
+                </p>
+                <p className="text-gray-600 text-base mt-3">
+                  
+                </p>
+                <p className="text-gray-600 text-base mt-3 font-bold">
+                  Your real beauty isn't just in your face; it's the light you carry in your heart.
+                </p>
+                <p className="text-gray-600 text-base mt-3 font-bold">
+                 
+                </p>
+>>>>>>> 55e6ad70411aaa3cf628c2cbee43d4cec7604f2d
               </div>
 
               <div className="flex items-center justify-center gap-2 text-2xl">
