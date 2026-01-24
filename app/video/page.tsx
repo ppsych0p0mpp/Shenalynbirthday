@@ -22,7 +22,7 @@ const messages = [
       <>
         
         <p className="text-gray-600 text-base mt-1">
-          Anyway, I’ve decided to share my message after all. If you wish to continue talking, just let me know. If not, I want to say thanks. Why did I think of this? I don’t know; maybe that’s just how I am. I just feel like you don’t want to talk to me anymore. These are thought btw, my intrusive thoughts won LOL.
+          Anyway, I’ve decided to share my message after all. If you wish to continue talking, just let me know. If not, I want to say thanks. Why did I think of this? I don’t know; maybe that’s just how I am. I just feel like you don’t want to talk to me anymore. These are my thoughts btw, my intrusive thoughts won LOL.
         </p>
       </>
     ),
@@ -50,7 +50,7 @@ const messages = [
           You deserve the best 🌹
         </p>
         <p className="text-gray-600 text-base mt-3">
-          I know you don't want to be greeted on your birthday, but I insist 🎂! Thanks for making my end and start of the year interesting. Stay positive and be happy!
+          I’ve never done this before, but I wanted to make this for you. I know you don't want to be greeted on your birthday, but I insist 🎂! Thanks for making my end and start of the year interesting. Stay positive and be happy!
         </p>
       </>
     ),
