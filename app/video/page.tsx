@@ -80,6 +80,39 @@ const messages = [
       </>
     ),
   },
+  {
+    title: 'Questions',
+    emoji: '❔',
+    content: (
+      <>
+        <p className="text-gray-600 text-base">
+          <ol>
+            <li>1. How are you?</li>
+            <li>2. How was your day?</li>
+            <li>3. How was your trip?</li>
+            <li>4. Are you having fun there?</li>
+            <li>5. What are you doing right now?</li>
+          </ol>
+        </p>
+      </>
+    ),
+  },{
+    title: 'Questions',
+    emoji: '❔',
+    content: (
+      <>
+        <p className="text-gray-600 text-base">
+          <ol>
+            <li>6. How are you really doing? Are you okay?</li>
+            <li>7. What are you thinking right now?</li>
+            <li>8. Are you happy?</li>
+            <li>9. Are you happy on your birthday? I hope you do.</li>
+            <li>10. What are your thoughts about this? I only made this for you. Do you think I should delete it?</li>
+          </ol>
+        </p>
+      </>
+    ),
+  },
 ];
 
 export default function VideoPage() {
